@@ -1,0 +1,97 @@
+.card {
+    background: white;
+    border-radius: var(--card-radius);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    aspect-ratio: 1 / 1;
+    transition: all 0.3s var(--transition-smooth);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.cardActive {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.iconWrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f5;
+    color: var(--text-secondary);
+    transition: all 0.4s var(--transition-smooth);
+    margin-bottom: 8px;
+}
+
+.iconWrapperActive {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 12px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.status {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.switch {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.card:hover .switch,
+.cardActive .switch {
+    opacity: 1;
+}
+
+.toggle {
+    width: 32px;
+    height: 18px;
+    background: #E0E0E0;
+    border-radius: 9px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggleActive {
+    background: var(--accent-color);
+}
+
+.thumb {
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.thumbActive {
+    transform: translateX(14px);
+}

@@ -1,0 +1,24 @@
+.sceneCard {
+    background: var(--panel-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.sceneCardActive {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.sceneCard span {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
